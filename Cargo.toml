@@ -1,10 +1,23 @@
 [package]
 name = "johndb"
 version = "0.1.0"
-authors = ["John Chow <johnkchow@stripe.com>"]
+authors = ["John Chow <johnkchow@someemailprovider.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[build-dependencies]
+cfgrammar = "0.13.2"
+lrlex = "0.13.2"
+lrpar = "0.13.2"
+
 [dependencies]
+cfgrammar = "0.13.2"
+lrlex = "0.13.2"
+lrpar = "0.13.2"
 byteorder = "1"
+log = "0.4.20"
+env_logger = "0.10.0"
+
+[dev-dependencies]
+ctor = "0.2.4"
